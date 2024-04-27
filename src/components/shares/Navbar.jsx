@@ -18,7 +18,7 @@ export default function Navbar() {
                 <h3 className='text-xl font-bold lg:hidden sm:block hidden text-[#2b9e76]'>আল হাদিস</h3>
             </div>
             <div className='flex lg:w-[45%] 2xl:w-[35%] lg:gap-0 gap-3 justify-between'>
-                <InputField style={'input lg:w-[300px] w-max lg:bg-transparent bg-gray-200'} />
+                <InputField style={'input lg:w-[300px] w-max lg:bg-transparent bg-gray-200'} placeholder={'Search Hadith'}/>
                 <Button title={`সাপোর্ট করুন`} icon={<BiDonateHeart />} iconStyle={'xl:flex items-center justify-center hidden gap-2'} style={'primary-clr text-white w-[180px]   rounded-md h-12'} />
                 <div className='h-[50px] p-4  flex items-center justify-center rounded-md w-max border-[1px] lg:bg-transparent bg-gray-200'>
                     <LuMoonStar className='text-2xl' />

@@ -5,7 +5,7 @@ import { Mosque } from '@/assets/images'
 export default function RightSide() {
     return (
 
-        <div className="w-[20%] space-y-5">
+        <div className="lg:w-[20%] lg:block hidden space-y-5">
             <div className="bg-white rounded-xl p-4 space-y-5">
                 <h1 className="text-[16px] font-semibold text-center ">সেটিংস</h1>
                 <div>
