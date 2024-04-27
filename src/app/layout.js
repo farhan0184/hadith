@@ -1,5 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/shares/Navbar";
+import Sidebar from "@/components/shares/Sidebar";
+import MobileBar from "@/components/shares/MobileBar";
+import { Providers } from "@/redux/provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +15,22 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className}  `}>
+        <div className="relative">
+          <Navbar />
+          <div className="flex ">
+            <Sidebar />
+            <Providers>
+              <div className="lg:w-[calc(100vw-70px)]  w-full lg:h-auto  h-[calc(100vh-82px)] bg-slate-300  lg:rounded-tl-2xl">
+                {children}
+              </div>
+            </Providers>
+
+          </div>
+
+          <MobileBar />
+        </div>
+      </body>
     </html>
   );
 }
