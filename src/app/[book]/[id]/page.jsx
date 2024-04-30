@@ -8,7 +8,7 @@ import { GiBookmark, GiOpenBook } from 'react-icons/gi'
 import { IoBookmarkOutline, IoCopyOutline, IoLibraryOutline, IoShareSocialOutline } from 'react-icons/io5'
 import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function page({ params }) {
+export default function Cheptar({ params }) {
   const [isOpen, setIsOpen] = useState(false)
   const [value, setValue] = useState("অধ্যায়");
   const [id, setId] =useState(0)
