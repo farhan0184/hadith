@@ -27,7 +27,7 @@ export default function Cheptar({ params }) {
               <div className='py-6 px-5 bg-white flex justify-between items-center rounded-b-xl'>
                 <div className='flex gap-4'>
 
-                  <GiBookmark className='text-7xl' />
+                  <GiBookmark className='text-6xl text-[#2b9e76]' />
                   <div>
                     <h1 className='tet-3xl font-semibold mb-4'>{data[id]?.title}</h1>
                     <p className='text-gray-400 mt-2'>সর্বমোট হাদিস - {data[id]?.total_hadiths}</p>
@@ -37,7 +37,7 @@ export default function Cheptar({ params }) {
               </div>
             </div>
             <div className='p-5 lg:hidden flex  gap-4 bg-white rounded-xl'>
-              <RxHamburgerMenu onClick={() => setIsOpen(!isOpen)} className='text-2xl text-black' />
+              <RxHamburgerMenu onClick={() => setIsOpen(!isOpen)} className='text-2xl text-black cursor-pointer' />
               <p className='text-[16px] font-semibold'>{data[id]?.title}</p>
             </div>
 
