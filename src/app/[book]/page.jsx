@@ -1,10 +1,10 @@
 'use client'
 import { useRouter } from 'next/navigation'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Book({params}) {
   const router = useRouter()
-  React.useEffect(() => {
+  useEffect(() => {
     router.push('/bukhara/1')
  }, [])
   return (

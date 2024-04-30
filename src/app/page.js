@@ -1,10 +1,10 @@
 'use client'
-import RightSide from "@/components/home/RightSide";
-import TabSection from "@/components/home/TabSection";
-import { getApiAction } from "@/redux/action/apiAction";
+// import RightSide from "@/components/home/RightSide";
+// import TabSection from "@/components/home/TabSection";
+// import { getApiAction } from "@/redux/action/apiAction";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+// import { useDispatch, useSelector } from "react-redux";
 
 
 export default function Home() {

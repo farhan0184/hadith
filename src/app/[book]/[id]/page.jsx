@@ -10,7 +10,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function page({ params }) {
   const [isOpen, setIsOpen] = useState(false)
-  const [value, setValue] = React.useState("অধ্যায়");
+  const [value, setValue] = useState("অধ্যায়");
   const [id, setId] =useState(0)
   return (
     <>
