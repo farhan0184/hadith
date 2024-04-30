@@ -99,6 +99,7 @@ export default function Cheptar({ params }) {
           </div>}
         </div>
       </div>
+      {/* mobile section */}
       {isOpen && <div className='bg-black/20 -left-[1px] h-screen w-full absolute top-0 z-50 '>
         <OutsideClickHandler
           onOutsideClick={() => {

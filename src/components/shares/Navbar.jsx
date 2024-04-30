@@ -40,6 +40,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
+            {/* mobile section */}
             {isSettings && <div className='bg-black/20 h-screen w-full absolute top-0 z-50 '>
                 <OutsideClickHandler
                     onOutsideClick={() => {
