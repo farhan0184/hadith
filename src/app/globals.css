@@ -12,4 +12,10 @@
   @apply flex items-center justify-center
 }
 
+::-webkit-scrollbar{
+  @apply w-1
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-[#2b9e76] h-7
+}
  

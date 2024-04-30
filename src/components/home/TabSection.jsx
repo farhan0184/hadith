@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
-import Loading from '../shares/Loading';
+// import { useSelector } from 'react-redux';
+// import Loading from '../shares/Loading';
 import Book from './Book';
 import InputField from '../shares/InputField';
 import { IoLibraryOutline } from 'react-icons/io5';
@@ -9,17 +9,18 @@ import { GiBookmark } from "react-icons/gi";
 import { GiOpenBook } from "react-icons/gi";
 import { FaStarAndCrescent } from "react-icons/fa6";
 import { IoCopyOutline,IoBookmarkOutline,IoShareSocialOutline  } from "react-icons/io5";
+import { data } from '@/util/data';
 export default function TabSection() {
     const [value, setValue] = React.useState("বই");
     const [id, setId] = React.useState(0)
     const [read, setRead] = useState(227)
     const [isRead, setIsRead] = useState(true)
 
-    const { data, isLoading } = useSelector((state) => state.api)
-    console.log(data)
+    // const { data, isLoading } = useSelector((state) => state.api)
+    // console.log(data)
     return (
         <>
-            {isLoading ? <Loading /> : <>
+            { <>
                 <div className="lg:w-[20%] lg:block hidden bg-white  rounded-xl h-[calc(90vh-40px)]">
                     <div className="flex 2xL:text-2xl text-[16px] font-bold border-b-[1px]">
                         <div className={`w-1/2 center py-3 cursor-pointer ${value === "বই" ? "primary-clr text-white" : "text-[#2b9e76] bg-white"} rounded-tl-xl`} onClick={() => setValue("বই")}>বই</div>
@@ -45,33 +46,7 @@ export default function TabSection() {
                 </div>
                 <div className="lg:w-[60%] w-full   rounded-xl ">
                     <div className="overflow-y-scroll h-[calc(90vh-40px)]">
-                        {/* {value === "বই" && <div>
-                            <div className='p-3 flex gap-2 bg-gray-200 rounded-t-xl'>
-                                <IoLibraryOutline className='text-xl text-gray-500' />
-                                <p className='text-[14px] font-semibold'>{data[id]?.title}</p>
-                            </div>
-                            <div className='p-5'>
-                                <div className='flex justify-between items-center'>
-                                    <h1 className='text-xl text-gray-700 font-semibold'>{data[id]?.title}</h1>
-                                    <InputField style={'input w-[300px]  bg-gray-200 mb-4'} input={'bg-gray-200'} placeholder={"Search For Filter"} />
-                                </div>
-                                <div className='inline-block text-[14px] my-5'>
-                                    <p className='text-gray-800 '>{data[id]?.book_descr.slice(0, read)}</p>
-                                    <div className={`${data[id]?.book_descr.length > 0 ? 'block' : 'hidden'} text-[#2b9e76]`}>
-                                        {isRead ? <button onClick={() => {
-                                            setRead(1000)
-                                            setIsRead(!isRead)
-                                        }}>আরো দেখুন</button> : <button onClick={() => {
-                                            setRead(227)
-                                            setIsRead(!isRead)
-                                        }}>লুকান</button>}
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-
-                            </div>
-                        </div>} */}
+                        
                         {<div>
                             <div className='p-3 flex gap-2 bg-gray-200 rounded-t-xl'>
                                 <IoLibraryOutline className='text-xl text-gray-500' />
